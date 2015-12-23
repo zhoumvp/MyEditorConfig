@@ -1,0 +1,23 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[/home/zhou/Desktop/Inconsolata.otf]
+row=0
+col=1
+
+[Xubuntu 14.04.3 LTS amd64]
+row=1
+col=1
+
+[Trash]
+row=0
+col=0
+
+[/]
+row=1
+col=0
+
+[/home/zhou]
+row=0
+col=2
+
