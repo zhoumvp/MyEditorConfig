@@ -1,14 +1,18 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set encoding=utf-8 " Necessary to show Unicode glyphs
-set t_Co=256
 
 " open at last position edit
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
+
 " settings for powerline
 set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 set laststatus=2
+set t_Co=256
 let g:Powerline_symbols = 'fancy'
+
+colorscheme base16-solarized
+set background=dark
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -23,10 +27,6 @@ set listchars=tab:▸\ ,trail:▫
 
 syntax enable
 syntax on
-set nu
-set t_Co=256
-set background=dark
-colorscheme solarized
 
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc source %
@@ -152,7 +152,6 @@ vnoremap > >gv  " better indentation
 
 
 " Showing line numbers and length
-set number  " show line numbers
 set tw=79   " width of document (used by gd)
 set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
@@ -194,6 +193,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'slim-template/vim-slim'
+Plugin 'chriskempson/base16-vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
